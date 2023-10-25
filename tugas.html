@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        /* Style dropdown button */
+        .dropbtn {
+            background-color: #0f0f0f;
+            color: rgb(250, 246, 246);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Style submenu container */
+        .submenu-container {
+            display: none;
+            padding: 10px;
+        }
+
+        
+        .submenu a {
+            color: #0e0e0e;
+            text-decoration: none;
+            display: block;
+        }
+        
+        
+         body {
+    background-image: url('/assets/kopi.jpg');
+    background-size: cover;
+}
+        
+            
+    </style>
+</head>
+<body>
+    <a class="background-image" href="kamar-estetik-sederhana.width-800.format-webp.webp"></a>
+    <h1>Tugas pertemuan 1 - 9</h1>
+    <div class="dropdown">
+        <button class="dropbtn" id="dropdownButton">Pilih Pertemuan</button>
+        <div class="submenu-container" id="pertemuan1">
+            <a href="#">Pertemuan 1</a><br>
+            <a href="pert4.html">Latihan 1</a><br>
+            <a href="tugas_pertemuan_1_latihan_2.html">Latihan 2</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan2">
+            <a href="#">Pertemuan 2</a><br>
+            <a href="Tugas/pertemuan 2/latihan 1 pertemuan 2.html">Latihan 1</a><br>
+            <a href="Tugas/pertemuan 2/latihan 2 perremuan 2.html">Latihan 2</a><br>
+            <a href="Tugas/pertemuan 2/Tugas pertemuan 2.html">Tugas</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan3">
+            <a href="#">Pertemuan 3</a><br>
+            <a href="Tugas/pert3/latihan 1 pertemuan 3.html">Latihan 1</a><br>
+            <a href="Tugas/pert3/latihan 2 pertemuan 3.html">Latihan 2</a><br>
+            <a href="Tugas/pert3/Tugas pertemuan 3.html">tugas</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan4">
+            <a href="#">Pertemuan 4</a><br>
+            <a href="Tugas/pert4/latihan1 andre.html">Latihan 1</a><br>
+            <a href="Tugas/pert4/suara.html">Latihan 2</a><br>
+            <a href="Tugas/pert4/video.html">Tugas</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan5">
+            <a href="#">Pertemuan 5</a><br>
+            <a href="Tugas/pert5/tugas latihan contoh hyperlink halaman utama.html">Latihan 1</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan6">
+            <a href="#">Pertemuan 6</a><br>
+            <a href="Tugas/pert6/latihan 1.html">Latihan 1</a><br>
+            <a href="Tugas/pert6/latiahn 2.html">Latihan 2</a><br>
+            <a href="Tugas/pert6/tugas latihan per 6.html">Tugas</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan7">
+            <a href="#">Pertemuan 7</a><br>
+            <a href="Tugas/pert7/latihan 1.html">Latihan 1</a><br>
+            <a href="Tugas/pert7/latihan 2.html">Latihan 2</a><br>
+            <a href="Tugas/pert7/pariwisata.html">Tugas</a><br>
+            <a href="Tugas/pert7/index.html">Index</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan8">
+            <a href="#">Pertemuan 8</a><br>
+            <a href="Tugas/pert8/latihan1per8/index.html">Latihan 1</a><br>
+            <a href="Tugas/pert8/tugasper8/index.html">Tugas</a><br>
+        </div>
+        <div class="submenu-container" id="pertemuan9">
+            <a href="#">Pertemuan 9</a><br>
+            <a href="Tugas/pert9/contohlayout.html">layout</a><br>
+            <a href="Tugas/pert9/galery.html">Gallery</a><br>
+            <a href="Tugas/pert9/home.html">Home</a><br>
+            <a href="Tugas/pert9/index.html">Index</a><br>
+            <a href="Tugas/pert9/kontak.html">Kontak</a><br>
+            <a href="Tugas/pert9/menu.html">Menu</a><br>
+            <a href="Tugas/pert9/profil.html">Profil</a><br>
+            <a href="Tugas/pert9/tugas latihan 9.html">Tugas</a><br>
+        </div>
+       
+    </div>
+
+    <script>
+        
+        const dropdownButton = document.getElementById('dropdownButton');
+        const submenuContainers = document.querySelectorAll('.submenu-container');
+
+        dropdownButton.addEventListener('click', () => {
+            submenuContainers.forEach((submenuContainer) => {
+                submenuContainer.style.display = 'block'; 
+            });
+        });
+
+       
+        const pertemuanLinks = document.querySelectorAll('.submenu a');
+        pertemuanLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                submenuContainers.forEach((submenuContainer) => {
+                    submenuContainer.style.display = 'block';
+                });
+                const pertemuanSubMenu = link.parentElement;
+                pertemuanSubMenu.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

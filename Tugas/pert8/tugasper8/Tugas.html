@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+    <form action="proses_registrasi.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required></textarea><br><br>
+
+        <label for="kota">Kota:</label>
+        <input type="text" id="kota" name="kota" required><br><br>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" id="pekerjaan" name="pekerjaan" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki_laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="hobi">Hobi (Pilih satu atau lebih):</label><br>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+        <label for="olahraga">Olahraga</label><br>
+        <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+        <label for="musik">Musik</label><br>
+        <input type="checkbox" id="seni" name="hobi[]" value="Seni">
+        <label for="seni">Seni</label><br>
+        <input type="checkbox" id="lainnya" name="hobi[]" value="Lainnya">
+        <label for="lainnya">Lainnya</label><br><br>
+
+        <input type="submit" value="Daftar">
+        <input type="reset" value="Reset"> 
+    </form>
+</body>
+</html>

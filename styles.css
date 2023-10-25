@@ -4,7 +4,7 @@
   }
    
   html {
-    background-image: url(/assets/awan.jpg);
+    background-image: url(./assets/awan.jpg);
     background-color: #e0e5e6;
     background-size: cover;
     font-family: sans-serif;

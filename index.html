@@ -1,74 +1,93 @@
-<html lang="en">
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Andre firmansyah web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Website | Andrea Firmansyah</title> 
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <nav>
-          <ul>
-            <li><a href="./About.html">About</a></li>
-            <li><a href="./tugas.html">Tugas</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
-          </ul>
-        </nav>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Andrea Firmansyah</a>
       </div>
-      <main class="content">
-        <section class="hero">
-          <img src="./assets/hitamputih.jpg" alt="" />
-          <div class="hero-content">
-            <h1></h1>
-            <br/>
-            <h2>Andrea Firmansyah</h2>
-            <br /><br />
-            <p>
-              selamat datang di website saya 
-            </p>
-            <a href="" class="action-btn">jangan di klik</a>
-          </div>
-        </section>
-      </main>
-      <div class="footer">
-        <footer>
-          <ul>
-            <li>
-              <ul>
-                <li>
-                    <a href="https://instagram.com/andrefrmsyh99?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==9" target="_blank">
-                        <img src="./assets/ig.jpg" alt="Instagram" />
-                        <p>@Andrefrmsyh99</p>
-                    </a>
-                </li>
-                <li>
-                  <a href="https://api.whatsapp.com/send?phone=6281410423955&text=Halo%20di%20sana!" target="_blank">
-                    <img src="./assets/wa2.jpg" alt="Logo WhatsApp">
-                    <p>081410423955</p>
-                  </a>
-                </li>
-                <li>
-                    <a href="https://t.me/@andrefrmsyh" target="_blank">
-                        <img src="./assets/tele.jpg" alt="Telegram" />
-                        <p>YourTelegramUsername</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Andrefirmansyah" target="_blank">
-                        <img src="./assets/fb.jpg" alt="Facebook" />
-                        <p>Andrefirmansyah</p>
-                    </a>
-                </li>
-            </ul>
-            
-            </li>
-          </ul>
-        </footer>
-      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#header">ABOUT</a></li>
+        <li><a href="tugas.html">TUGAS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
     </div>
-    
-  </body>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">WELCOME TO MY WEBSITE</div>
+    <div class="sub_title"></div>
+    <div class="btns">
+    </div>
+    </div>
+
+  <div id="header">
+      <h1>About me</h1>
+  </div>
+  <div id="profile" class="body2">
+      <img src="./assets/andre2.jpeg" alt="Foto Profil Anda" class="img2">
+      <div class="data">
+      <p>Nama: Andrea Firmansyah</p>
+      <p>Usia: 24th</p>
+      <p>Hobi : sepakbola</p>
+      <p>Lokasi: Jakarta</p>
+      <p>Email: andrefrmnsyh99.@gmail.com</p>
+      <p>Instagram: <a href="https://instagram.com/andrefrmsyh99?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" style="color: #0077B5;">instagram</a></p>
+      <p>Deskripsi Singkat:</p>
+      <p>
+          saya andre umur 24th, saya masih aktif berkuliah di universitas pamulang 
+      </p>
+      <a href="potrofolio/index.html" class="cta">my portofolio</a>
+      </div>
+  </div>
+  <div id="contact" class="contact">
+    <div class="container">
+        <h1 class="cons">Hubungi Saya</h1>
+        <form action="proses_form.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+  </div>
+    <footer>
+      <div class="Socials">
+        <a href="https://www.instagram.com/andrefrmsyh99"><i data-feather="instagram"></i></a>
+        <a href=""><i data-feather="facebook"></i></a>
+        <a href=""><i data-feather="mail"></i></a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">AndreaFirmansyah</a>
+          . | &copy; 2023
+        </p>
+
+</div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+</body>
 </html>
+
+
+            
+            
+            

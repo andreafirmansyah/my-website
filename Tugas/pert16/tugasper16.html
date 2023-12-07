@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+
+    <div>
+        <label for="angka1">Angka 1:</label>
+        <input type="text" id="angka1">
+    </div>
+    
+    <div>
+        <label for="operator">Operator:</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="angka2">Angka 2:</label>
+        <input type="text" id="angka2">
+    </div>
+    
+    <button onclick="hitung()">Hitung</button>
+
+    <div>
+        <label for="hasil">Hasil:</label>
+        <input type="text" id="hasil" readonly>
+    </div>
+
+    <script>
+        function hitung() {
+            var angka1 = parseFloat(document.getElementById("angka1").value);
+            var angka2 = parseFloat(document.getElementById("angka2").value);
+            var operator = document.getElementById("operator").value;
+            var hasil = 0;
+
+            switch (operator) {
+                case "+":
+                    hasil = angka1 + angka2;
+                    break;
+                case "-":
+                    hasil = angka1 - angka2;
+                    break;
+                case "*":
+                    hasil = angka1 * angka2;
+                    break;
+                case "/":
+                    if (angka2 !== 0) {
+                        hasil = angka1 / angka2;
+                    } else {
+                        alert("Pembagian dengan 0 tidak diperbolehkan.");
+                    }
+                    break;
+                default:
+                    alert("Operator tidak valid.");
+            }
+
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+</html>

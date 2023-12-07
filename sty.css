@@ -55,7 +55,7 @@ nav .menu{
   color: black;
 }
 .img{
-  background: url('/assets/awan.jpg')no-repeat;
+  background: url('./assets/gunung\ 2.jpg')no-repeat;
   width:100%;
   height: 100vh;
   background-size: cover;

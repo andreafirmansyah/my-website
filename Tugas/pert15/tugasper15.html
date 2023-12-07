@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Fasilitas JavaScript</title>
+</head>
+<body>
+
+<script>
+    // Menggunakan alert untuk menampilkan pesan
+    alert("Halo, selamat datang!");
+
+    // Menggunakan prompt untuk mengambil input dari pengguna
+    var nama = prompt("Silakan masukkan nama Anda:");
+    alert("Halo, " + nama + "!");
+
+    // Menggunakan confirm untuk mengkonfirmasi tindakan pengguna
+    var konfirmasi = confirm("Apakah Anda yakin ingin melanjutkan?");
+    if (konfirmasi) {
+        alert("Anda memilih untuk melanjutkan.");
+    } else {
+        alert("Anda membatalkan tindakan.");
+    }
+</script>
+
+<!-- Menggunakan <form> untuk mengambil input dari pengguna -->
+<form id="myForm">
+    <label for="inputText">Masukkan teks:</label>
+    <input type="text" id="inputText" name="inputText">
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    // Menangani pengiriman form
+    document.getElementById("myForm").onsubmit = function(event) {
+        event.preventDefault();
+        var inputValue = document.getElementById("inputText").value;
+        alert("Anda mengirim teks: " + inputValue);
+    }
+</script>
+
+</body>
+</html>

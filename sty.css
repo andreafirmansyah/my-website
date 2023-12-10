@@ -23,11 +23,11 @@ nav .menu{
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  box-shadow: 0 0 10px rgb(84, 83, 83);
+  box-shadow: 0 0 10px rgb(173, 173, 172);
   }
 .menu .logo a{
   text-decoration: none;
-  color: #f7eeee;
+  color: #f6f6f6;
   font-size: 35px;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@ nav .menu{
 }
 .menu ul li a{
   text-decoration: none;
-  color: rgb(145, 144, 147);
+  color: rgb(238, 236, 242);
   font-size: 18px;
   font-weight: 500;
   padding: 8px 15px;
@@ -153,7 +153,7 @@ body, html {
       font-size: 0.8rem;
     }
     footer .credit p,a {
-      color: #fff;
+      color: rgb(23, 230, 230);
       font-weight: 700;
     }
     .body2 {
@@ -162,7 +162,7 @@ body, html {
       padding: 0;
   }
   #header {
-    background-color: rgba(12, 12, 12, 0.9);
+    background-color: rgba(58, 57, 57, 0.9);
       color: #f3eded;
       padding: 20px;
       text-align: center;
@@ -170,17 +170,17 @@ body, html {
   #profile {
       width: 100%;
       margin: 0 auto;
-      background-color: rgba(12, 12, 12, 0.9); /* Tambahkan transparansi pada latar belakang */
+      background-color: rgba(8, 8, 8, 0.9); /* Tambahkan transparansi pada latar belakang */
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgb(241, 237, 237);
+      box-shadow: 0 0 10px rgb(249, 248, 248);
   }
   .img2{
       max-width: 30%;
       border-radius: 50%;
   }
   .data {
-      color: #555;
+      color: #4b4a4a;
   }
   .container {
     max-width: 800px;
@@ -191,16 +191,16 @@ body, html {
 .contact .container .cons {
     text-align: center;
     padding: 14px;
-    color: #121111;
+    color: #080808;
 }
 
 .contact .container form {
-    color: #ffffff;
+    color: #090909;
 }
 
 form {
-    border: #fff 0.5px solid;
-    background-color: #1b1919;
+    border: #060606 0.5px solid;
+    background-color: #f7f5f5;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -217,8 +217,8 @@ input[type="text"], textarea {
 }
 
 button {
-    background-color: #efebeb;
-    color: #100f0f;
+    background-color: #f60606;
+    color: #f7f2f2;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;

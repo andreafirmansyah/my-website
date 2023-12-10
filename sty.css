@@ -55,9 +55,9 @@ nav .menu{
   color: black;
 }
 .img{
-  background: url('./assets/gunung\ 2.jpg')no-repeat;
+  background: url('.//assets/andrwa.jpg')no-repeat;
   width:100%;
-  height: 100vh;
+  height: 150vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -218,17 +218,25 @@ input[type="text"], textarea {
 
 button {
     background-color: #efebeb;
-    color: #ef0808;
+    color: #100f0f;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
   }
+
+  body {
+
+    font-size: 14px;
+  }
+  img {
+    height: 50hv;
+  }
 }
-.container {
+.contai {
   background-color: #555;
 }

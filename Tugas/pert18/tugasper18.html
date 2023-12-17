@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Pilihan</title>
+</head>
+<body>
+    <h1>Menu Pilihan</h1>
+    <p>Menu Pilihan:</p>
+    <p>[1] Menghitung Kalkulator</p>
+    <p>[2] Menghitung Luas Trapesium</p>
+    <p>[3] Menghitung Deret</p>
+
+    <p>Pilihan Anda: <input type="text" id="pilihan"></p>
+    <button onclick="tampilkanHasil()">Eksekusi</button>
+
+    <div id="output"></div>
+
+    <script>
+        function hitungKalkulator() {
+            var angka1 = parseFloat(prompt("Masukkan angka pertama:"));
+            var operator = prompt("Masukkan operator (+, -, *, /):");
+            var angka2 = parseFloat(prompt("Masukkan angka kedua:"));
+            var hasil;
+
+            switch (operator) {
+                case "+":
+                    hasil = angka1 + angka2;
+                    break;
+                case "-":
+                    hasil = angka1 - angka2;
+                    break;
+                case "*":
+                    hasil = angka1 * angka2;
+                    break;
+                case "/":
+                    hasil = angka1 / angka2;
+                    break;
+                default:
+                    hasil = "Operator tidak valid.";
+            }
+
+            return "Hasil: " + hasil;
+        }
+
+        function hitungLuasTrapesium() {
+            var garisAtas = parseFloat(prompt("Masukkan panjang garis atas trapesium:"));
+            var garisBawah = parseFloat(prompt("Masukkan panjang garis bawah trapesium:"));
+            var tinggi = parseFloat(prompt("Masukkan tinggi trapesium:"));
+            var luas = (garisAtas + garisBawah) * tinggi / 2;
+            return "Luas trapesium: " + luas;
+        }
+
+        function hitungDeret() {
+            var nilaiAwal = parseInt(prompt("Masukkan nilai awal deret:"));
+            var nilaiAkhir = parseInt(prompt("Masukkan nilai akhir deret:"));
+            var jumlahDeret = 0;
+            var jumlahNilai = 0;
+
+            for (var i = nilaiAwal; i <= nilaiAkhir; i++) {
+                if (i % 2 === 0 && i % 3 === 0) {
+                    jumlahDeret++;
+                    jumlahNilai += i;
+                }
+            }
+
+            return "Jumlah deret bilangan: " + jumlahDeret + " bilangan, Jumlah nilai bilangan: " + jumlahNilai;
+        }
+
+        function tampilkanHasil() {
+            var pilihan = document.getElementById("pilihan").value;
+            var output = document.getElementById("output");
+
+            if (pilihan === "1") {
+                output.textContent = hitungKalkulator();
+            } else if (pilihan === "2") {
+                output.textContent = hitungLuasTrapesium();
+            } else if (pilihan === "3") {
+                output.textContent = hitungDeret();
+            } else {
+                output.textContent = "Pilihan tidak valid.";
+            }
+        }
+    </script>
+</body>
+</html>

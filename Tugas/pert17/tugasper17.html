@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deret Bilangan Genap Habis Dibagi 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deret Bilangan Genap Habis Dibagi 3</h1>
+    
+    <label for="nilaiAwal">Nilai Awal:</label>
+    <input type="number" id="nilaiAwal">
+    
+    <label for="nilaiAkhir">Nilai Akhir:</label>
+    <input type="number" id="nilaiAkhir">
+    
+    <button onclick="tampilkanDeret()">Tampilkan Deret</button>
+    
+    <div id="output">
+        Nilai Awal: <span id="outputNilaiAwal"></span><br>
+        Nilai Akhir: <span id="outputNilaiAkhir"></span><br>
+        Deret yang tampil: <span id="outputDeret"></span><br>
+        Jumlah deret bilangan: <span id="outputJumlahDeret"></span> bilangan<br>
+        Jumlah nilai bilangan tersebut: <span id="outputJumlahNilai"></span>
+    </div>
+
+    <script>
+        function tampilkanDeret() {
+            var nilaiAwal = parseInt(document.getElementById("nilaiAwal").value);
+            var nilaiAkhir = parseInt(document.getElementById("nilaiAkhir").value);
+
+            document.getElementById("outputNilaiAwal").textContent = nilaiAwal;
+            document.getElementById("outputNilaiAkhir").textContent = nilaiAkhir;
+
+            var deret = [];
+            var jumlahDeret = 0;
+            var jumlahNilai = 0;
+
+            for (var i = nilaiAwal; i <= nilaiAkhir; i++) {
+                if (i % 2 === 0 && i % 3 === 0) {
+                    deret.push(i);
+                    jumlahDeret++;
+                    jumlahNilai += i;
+                }
+            }
+
+            document.getElementById("outputDeret").textContent = deret.join(", ");
+            document.getElementById("outputJumlahDeret").textContent = jumlahDeret;
+            document.getElementById("outputJumlahNilai").textContent = jumlahNilai;
+        }
+    </script>
+</body>
+</html>

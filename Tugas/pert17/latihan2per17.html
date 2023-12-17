@@ -1,0 +1,19 @@
+<script type="text/javascript">
+//Jika waktu dari 10, Anda akan mendapat ucapan selamat pagi
+//Selain itu Anda akan mendapat ucapan selamat siang.
+
+// Get the current date and time.
+var d = new Date();
+
+// Extract the current hour from the date.
+var time = d.getHours();
+
+// Check if the current time is less than 10 (morning).
+if (time < 10) {
+    // If true, print "Good morning!" to the document.
+    document.write("Good morning!");
+} else {
+    // If false, print "Good day!" to the document.
+    document.write("Good day!");
+}
+</script>
